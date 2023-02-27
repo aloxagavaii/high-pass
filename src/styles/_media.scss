@@ -1,0 +1,267 @@
+@media (max-width: 1024px) {
+  .logo {
+    width: 166px;
+  }
+  .nav {
+    grid-template-columns: 166px 1fr 25px;
+  }
+  .hero__left {
+    padding: 30px;
+  }
+  .hero__title {
+    font-size: 34px;
+    line-height: 100%;
+  }
+  .about__grid {
+    grid-template-columns: min-content;
+    grid-row-gap: 20px;
+  }
+  .about__input {
+    width: 342px;
+  }
+  .about__btn {
+    width: 126px;
+  }
+  .projects__area {
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      'a a a'
+      'b b d'
+      'f c c';
+    grid-row-gap: 24px;
+  }
+  .projects__1 {
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+  }
+  .contacts__adress {
+    top: 303px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 25px 248px 25px 30px;
+  }
+  .contacts__form {
+    min-width: 342px;
+  }
+}
+@media (max-width: 1000px) {
+  .flex1 {
+    display: none;
+  }
+  .sub-header {
+    display: block;
+    background-color: #4f4f4f;
+    .flex2 {
+      padding: 12px 0;
+    }
+  }
+  .sub-sub {
+    padding: 0 27px;
+  }
+  .header__container {
+    padding: 24px 27px;
+  }
+  .hero {
+    padding: 34px 27px 68px 27px;
+  }
+  .about__sub-container {
+    padding: 30px 27px 60px 27px;
+  }
+  .projects {
+    padding: 68px 27px;
+  }
+  .contacts {
+    padding: 0 27px 68px 27px;
+  }
+  .footer__sub {
+    padding: 24px 27px 16px 27px;
+  }
+  .nav__btn {
+    grid-column: 3/4;
+  }
+}
+@media (max-width: 900px) {
+  .footer__text {
+    display: none;
+  }
+}
+@media (max-width: 770px) {
+  .hero__right--title {
+    font-size: 22px;
+    line-height: 104%;
+  }
+  .projects__area {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'a a'
+      'b b'
+      'd f'
+      'c c';
+  }
+  .projects__1 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .contacts__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, min-content);
+    grid-row-gap: 24px;
+  }
+  .contacts__form {
+    min-width: 260px;
+    max-width: 466px;
+  }
+}
+@media (max-width: 700px) {
+  .flex2 {
+    display: none;
+  }
+  .burger-btn {
+    display: block;
+    padding: 12px 0;
+    background-color: transparent;
+    border: none;
+  }
+  .grid__hero-about {
+    grid-template-columns: 1fr;
+    margin-bottom: 50px;
+  }
+}
+@media (max-width: 500px) {
+  .projects__area {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, min-content);
+    grid-template-areas:
+      'a'
+      'b'
+      'd'
+      'f'
+      'c';
+  }
+  .projects__1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 25px;
+  }
+  .sub-sub {
+    padding: 0 21px;
+  }
+  .header__container {
+    padding: 25px 21px;
+  }
+  .hero {
+    padding: 30px 21px 0 21px;
+  }
+  .about__sub-container {
+    padding: 32px 21px 60px 21px;
+  }
+  .projects {
+    padding: 0 21px 34px 21px;
+  }
+  .contacts {
+    padding: 0 21px 50px 21px;
+  }
+  .footer__sub {
+    padding: 31px 21px 32px 21px;
+  }
+  .footer__sub {
+    justify-content: center;
+  }
+  .footer__logo {
+    display: none;
+  }
+  .footer__logo--320 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-shadow);
+    margin: 0 auto;
+    padding: 14px 21px;
+  }
+  .logo {
+    width: 112px;
+  }
+  .footer__span {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .btn {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .project-text-white {
+    width: 200px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 21px;
+  }
+  .projects__2,
+  .projects__3 {
+    padding: 197px 30px 30px;
+  }
+  .form-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .adress__adress {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  #map {
+    transform: translateX(-21px);
+    width: 120%;
+    height: 472px;
+  }
+  .contacts__form {
+    width: 90%;
+  }
+  .phone {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .adress__title {
+    font-size: 18px;
+  }
+  .projects__btn {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .label {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .section__title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .text {
+    font-size: 14px;
+    line-height: 25px;
+  }
+  .about__input {
+    width: 260px;
+  }
+  .about__grid {
+    grid-column-gap: 20px;
+  }
+  .about__sub-title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .about__right {
+    padding: 0;
+  }
+  .hero__right--title {
+    font-size: 18px;
+  }
+  .hero__title {
+    font-size: 24px;
+    line-height: 110%;
+  }
+  .hero__span {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

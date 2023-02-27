@@ -1,0 +1,123 @@
+.projects {
+  padding: 68px 31px;
+}
+.projects__area {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    'a b b'
+    'c d f';
+  gap: 30px;
+}
+.projects__1 {
+  grid-area: a;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+.projects__1--sub1 {
+  position: relative;
+}
+.projects__1--sub2 {
+  position: relative;
+}
+.projects__1--sub3 {
+  position: relative;
+}
+.project-title {
+  margin-bottom: 12px;
+}
+.projects__label {
+  top: 7px;
+  right: 7px;
+}
+.project-text {
+  line-height: 22px;
+  color: var(--color-dark);
+  margin-bottom: 13px;
+}
+.project-date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 22px;
+  color: var(--color-wolf);
+}
+.project-date-white {
+  color: var(--color-white);
+  margin-left: 5px;
+}
+.projects__image1 {
+  margin-bottom: 18px;
+}
+.projects__2 {
+  grid-area: b;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 30px 30px;
+  background-image: url(../images/p_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.projects__sub-title {
+  font-family: 'TTFirsNeue';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--color-white);
+  margin-bottom: 5px;
+}
+.project-text-white {
+  width: 292px;
+  line-height: 22px;
+  color: var(--color-white);
+}
+.projects__btn {
+  width: 121px;
+  padding: 15px 22px;
+  color: var(--color-white);
+  border-color: transparent;
+  border: 3px solid var(--color-bronze);
+  margin-top: auto;
+  transition: background-color 0.3s ease-in-out;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+.projects__btn:focus {
+  background-color: var(--color-gold);
+  outline: 1px solid var(--color-bronze);
+}
+.projects__btn:hover {
+  background-color: var(--color-bronze);
+}
+.projects__btn:active {
+  background-color: var(--color-copper);
+  border: 1px solid var(--color-copper);
+}
+.projects__3 {
+  grid-area: c;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 22px 30px 30px;
+  background-image: url(../images/p_3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.projects__4-5 {
+  position: relative;
+}
+.p4 {
+  grid-area: d;
+}
+.p5 {
+  grid-area: f;
+}
+.projects__flex {
+  display: flex;
+}

@@ -1,0 +1,125 @@
+[class*='ground-pane'] {
+  filter: grayscale(1);
+}
+.contacts {
+  padding: 0 31px 68px 31px;
+}
+.map-title {
+  margin-bottom: 22px;
+}
+.contacts__grid {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  grid-column-gap: 30px;
+}
+#map {
+  position: relative;
+  height: 490px;
+  width: 100%;
+}
+.contacts__adress {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 51.7647%;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(32, 32, 32, 0.85);
+  z-index: 10;
+  padding: 175px 50px 150px 60px;
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  &_active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.adress__title {
+  font-family: 'TTFirsNeue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  color: var(--color-white);
+  margin-bottom: 5px;
+}
+.adress__adress {
+  color: var(--color-grey);
+}
+.phone {
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--color-white);
+  cursor: pointer;
+  .adress-svg {
+    fill: var(--color-white);
+  }
+}
+.phone:focus {
+  color: var(--color-bronze);
+  .adress-svg {
+    fill: var(--color-bronze);
+  }
+}
+.phone:hover {
+  color: var(--color-gold);
+  .adress-svg {
+    fill: var(--color-gold);
+  }
+}
+.phone:active {
+  color: var(--color-copper);
+  .adress-svg {
+    fill: var(--color-copper);
+  }
+}
+.contacts__closes {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.contacts__form {
+  display: flex;
+  flex-direction: column;
+  min-width: 410px;
+}
+.form-title {
+  font-family: 'TTFirsNeue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+.form-text {
+  margin-bottom: 10px;
+  color: var(--color-wolf);
+}
+.field {
+  color: var(--color-wolf);
+  background-color: #e9e9e9;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  padding: 14px 23px;
+  transition: background-color 0.3s ease-in-out;
+}
+.field:focus {
+  color: var(--color-bronze);
+  border: none;
+  outline: none;
+}
+.field:hover {
+  outline: 1px solid var(--color-bronze);
+  border: none;
+}
+
+.contacts__area {
+  resize: none;
+  max-height: 150px;
+}
